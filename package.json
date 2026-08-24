@@ -1,14 +1,19 @@
 {
-  "name": "sonora",
-  "version": "6.0.0",
+  "name": "streamverse",
+  "version": "12.14.1",
+  "description": "StreamVerse — optimized movies, TV and anime discovery app for Render",
   "private": true,
-  "description": "Sonora - premium music streaming with a 7-band equaliser, studio sound modes, downloads and live listening rooms",
-  "main": "start.js",
+  "license": "UNLICENSED",
+  "main": "server.js",
   "scripts": {
-    "start": "node start.js",
-    "dev": "node --openssl-legacy-provider server.js"
+    "start": "node server.js",
+    "check": "node --check server.js && node --check app.js",
+    "test": "node --test"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=18.18"
+  },
+  "dependencies": {
+    "puppeteer": "^24.43.1"
   }
 }
